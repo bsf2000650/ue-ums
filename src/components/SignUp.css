@@ -1,0 +1,453 @@
+.mainWrapper {
+    background-color: #2E482D;
+    /* background: linear-gradient(to right, #2E482D, #3E6340); Gradient from dark green to a slightly lighter green */
+    height: 100vh;
+    width: 80%;
+    float: right;
+}
+
+.mainWrapper1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Ensure mainWrapper1 is above mainWrapper */
+}
+
+.leftDiv {
+    height: 80vh;
+    background-color: #2E482D;
+    width: 24%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: yellow;
+    font-size: 27px;
+    font-weight: bold;
+  }
+
+  .element {
+        margin-top: -50px;
+        margin-left: 0px;
+        font-size: 45px;
+  }
+  .element1 {
+        font-size: 25px;
+        margin-left: 2px;
+        font-weight: 400;
+  }
+  .signUpDetailsDiv {
+    height: 80vh;
+    background-color: #fff;
+    border: 1px solid #fff;
+    width: 60%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .signUpDetailsDiv form {
+    margin-left: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    /* background-color: white; */
+    width: 62%;
+  }
+
+  .signUpDetailsDiv form .wrapper{
+    display: flex;
+  }
+
+  .names {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+.signUpDetailsDiv form label {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.signUpDetailsDiv form input,
+.signUpDetailsDiv form select {
+    border: none;
+    line-height: 30px;
+    width: 80%;
+    font-size: 17px;
+}
+.signUpDetailsDiv form input::placeholder {
+    font-weight: lighter;
+    font-size: 17px;
+}
+.signUpDetailsDiv form input:focus{
+    outline: none;
+}
+
+.signUpDetailsDiv form .reactIcons {
+    margin: 13px;
+    color: rgb(150,51,255);
+    border: 2px solid rgb(150,51,255);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.signUpDetailsDiv form label,
+.signUpDetailsDiv form button{
+        border-radius: 25px;
+        margin: 5px 12px;
+        line-height: 32px;
+        width: 80%;
+        box-shadow: 5px 5px 8px rgb(223,231,252),
+                -5px -5px 8px rgb(223,231,252);
+        border: none;
+        height: 8vh;
+        /* transition: border-bottom 0.5s ease-in-out; */
+    }
+
+    .signUpDetailsDiv form button {
+        font-family: 'Your Chosen Font', sans-serif;
+        background-color: rgb(150,51,255); /* Button background color */
+        color: #fff; /* Button text color */
+        padding: 10px 20px; /* Adjust padding as needed */
+        border: none; /* Remove default button border */
+        border-radius: 5px; /* Add border-radius for rounded corners */
+        cursor: pointer; /* Change cursor on hover */
+        /* Add other styling as needed */
+        width: 60%;
+        height: 8vh;
+        border-radius: 20px;
+      }
+      
+      /* Change button styles on hover */
+      .signUpDetailsDiv form button:hover {
+        background-color: #06111d; /* Adjust hover background color */
+        /* Add other hover styling as needed */
+      }
+
+    .signUpDetailsDiv form select {
+        background-color: white;
+    }
+
+     #gender #id
+      {
+        font-size: 15px;
+    }
+    
+  
+    .signUpDetailsDiv form label:hover,
+    .signUpDetailsDiv form select:hover,
+    .signUpDetailsDiv form button:hover {
+        border-bottom: 2px solid rgba(150, 51, 255, 0.8); 
+    }
+
+    .signUpDetailsDiv form .termsAndConditions {
+        font-size: 13px;
+        margin: 0px;
+    }
+
+    /* 320px — 480px: Mobile devices */
+
+    @media screen and (min-width:320px) and (max-width:375px) {
+        .mainWrapper {
+            display: none;
+        }
+        .mainWrapper1 {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+        .leftDiv{
+            width: 100%;
+            border-bottom-left-radius: 0px;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            height: 25vh;
+            border-top-left-radius: 90px;
+            border-bottom-right-radius: 90px;
+            margin: 3px;
+            /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
+        }
+        .element{
+            margin-top: -13px;
+    margin-bottom: 0px;
+    font-size: 50px;
+    margin-left: 0px;
+        }
+        .element1 {
+            font-size: 28px;
+    margin-left: 0px;
+            margin-bottom: 14px;
+            font-weight: 100;
+            margin-top: 0px;
+        }
+        .signUpDetailsDiv {
+            width: 100%;
+            height: auto;
+        }
+        .signUpDetailsDiv form {
+            margin-left: 0px;
+            width: 82%;
+            font-size: 20px;
+        }
+        .signUpDetailsDiv form input::placeholder {
+            font-weight: lighter;
+            font-size: 20px;
+        }
+        .signUpDetailsDiv form label, .signUpDetailsDiv form button {
+            width: 100%;
+            border-radius: 50px;
+        }
+        .signUpDetailsDiv form input, .signUpDetailsDiv form select {
+            width: 72%;
+        }
+    }
+
+    @media screen and (min-width:376px) and (max-width:425px) {
+        .mainWrapper {
+            display: none;
+        }
+        .mainWrapper1 {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+        .leftDiv{
+            width: 100%;
+            border-bottom-left-radius: 0px;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            height: 30vh;
+            border-top-left-radius: 90px;
+            border-bottom-right-radius: 90px;
+            margin: 3px;
+            /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
+        }
+        .element{
+            margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 60px;
+    margin-left: 0px;
+        }
+        .element1 {
+            font-size: 28px;
+    margin-left: 0px;
+            margin-bottom: 14px;
+            font-weight: 100;
+            margin-top: 0px;
+        }
+        .signUpDetailsDiv {
+            width: 100%;
+            height: auto;
+        }
+        .signUpDetailsDiv form {
+            margin-left: 0px;
+            width: 82%;
+            font-size: 20px;
+        }
+        .signUpDetailsDiv form input::placeholder {
+            font-weight: lighter;
+            font-size: 20px;
+        }
+        .signUpDetailsDiv form label, .signUpDetailsDiv form button {
+            width: 100%;
+            border-radius: 50px;
+        }
+        .signUpDetailsDiv form input, .signUpDetailsDiv form select {
+            width: 72%;
+        }
+    }
+
+    @media screen and (min-width:426px) and (max-width:480px) {
+        .mainWrapper {
+            display: none;
+        }
+        .mainWrapper1 {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+        .leftDiv{
+            width: 100%;
+            border-bottom-left-radius: 0px;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            height: 30vh;
+            border-top-left-radius: 90px;
+            border-bottom-right-radius: 90px;
+            margin: 3px;
+            /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
+        }
+        .element{
+            margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 68px;
+    margin-left: 0px;
+        }
+        .element1 {
+            font-size: 40px;
+    margin-left: 0px;
+            margin-bottom: 14px;
+            font-weight: 100;
+            margin-top: 0px;
+        }
+        .signUpDetailsDiv {
+            width: 100%;
+            height: auto;
+        }
+        .signUpDetailsDiv form {
+            margin-left: 0px;
+            width: 82%;
+            font-size: 20px;
+        }
+        .signUpDetailsDiv form input::placeholder {
+            font-weight: lighter;
+            font-size: 20px;
+        }
+        .signUpDetailsDiv form label, .signUpDetailsDiv form button {
+            width: 100%;
+            border-radius: 50px;
+        }
+        .signUpDetailsDiv form input, .signUpDetailsDiv form select {
+            width: 72%;
+        }
+    }
+
+    @media screen and (min-width:481px) and (max-width:768px) {
+        .mainWrapper {
+            display: none;
+        }
+        .mainWrapper1 {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+        .leftDiv{
+            width: 100%;
+            border-bottom-left-radius: 0px;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            height: 30vh;
+            border-top-left-radius: 90px;
+            border-bottom-right-radius: 90px;
+            margin: 3px;
+            /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
+        }
+        .element{
+            margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 68px;
+    margin-left: 0px;
+        }
+        .element1 {
+            font-size: 40px;
+    margin-left: 0px;
+            margin-bottom: 14px;
+            font-weight: 100;
+            margin-top: 0px;
+        }
+        .signUpDetailsDiv {
+            width: 100%;
+            height: auto;
+        }
+        .signUpDetailsDiv form {
+            margin-left: 0px;
+            width: 82%;
+            font-size: 30px;
+        }
+        .signUpDetailsDiv form input::placeholder {
+            font-weight: lighter;
+            font-size: 30px;
+        }
+        .signUpDetailsDiv form label, .signUpDetailsDiv form button {
+            width: 87%;
+            border-radius: 50px;
+            font-size: 33px;
+        }
+        .signUpDetailsDiv form input, .signUpDetailsDiv form select {
+            width: 72%;
+            font-size: 30px;
+        }
+    }
+
+
+    @media screen and (min-width:769px) and (max-width:1024px) {
+        .leftDiv {
+            width: 29%;
+        }
+        .element {
+            margin-top: -35px;
+            margin-left: 0px;
+            font-size: 35px;
+        }
+        .element1 {
+            font-size: 25px;
+            margin-left: 24px;
+            font-weight: 300;
+        }
+        .signUpDetailsDiv form {
+            width: 100%;
+            margin-top: 15px;
+        }
+        .signUpDetailsDiv form input, .signUpDetailsDiv form select {
+            width: 76%;
+        }
+    }
+
+    @media screen and (min-width:1025px) and (max-width:1200px) {
+        .element {
+            margin-top: -35px;
+            margin-left: 0px;
+            font-size: 39px;
+            margin-bottom: 25px;
+        }
+        .element1 {
+            font-size: 22px;
+            margin-left: 0px;
+            font-weight: 300;
+        }
+        .signUpDetailsDiv {
+            width: 50%;
+        }
+        .signUpDetailsDiv form {
+            margin-top: 15px;
+            margin-left: 0px;
+            width: 80%;
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        .element {
+            margin-top: -55px;
+            margin-left: 12px;
+            font-size: 45px;
+        }
+        .element1 {
+            font-size: 22px;
+            margin-left: 20px;
+            font-weight: 400;
+        }
+    }
+
+
+    /* 481px — 768px: iPads, Tablets
+    769px — 1024px: Small screens, laptops
+    1025px — 1200px: Desktops, large screens
+    1201px and more —  Extra large screens, TV */

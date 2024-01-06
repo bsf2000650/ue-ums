@@ -1,0 +1,308 @@
+.loginMainWrapper {
+    position: relative;
+    /* background-color: #2E482D; */
+    background: linear-gradient(to right, #2E482D, #3E6340); /* Gradient from dark green to a slightly lighter green */
+    height: 100vh;
+    width: 80%;
+    float: right;
+}
+
+.loginMainWrapper1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Ensure loginMainWrapper1 is above loginMainWrapper */
+}
+
+
+
+.loginMainWrapper1 .leftDiv {
+    height: 80vh;
+    background-color: #2E482D;
+    width: 24%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: yellow;
+    font-size: 27px;
+    font-weight: bold;
+  }
+
+  .loginMainWrapper1 .leftDiv .element {
+    margin-top: -100px;
+    margin-left: 35px;
+    font-size: 45px;
+  }
+  .loginMainWrapper1 .leftDiv .element1 {
+    font-size: 26px;
+  margin-left: 35px;
+  }
+  .loginDetailsDiv {
+    height: 80vh;
+    background-color: #fff;
+    border: 1px solid #fff;
+    width: 60%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .loginDetailsDiv form {
+    margin-left: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    /* background-color: white; */
+    width: 62%;
+  }
+
+  .loginDetailsDiv form .wrapper{
+    display: flex;
+  }
+
+
+.loginDetailsDiv form label {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.loginDetailsDiv form input,
+.loginDetailsDiv form select {
+    border: none;
+    line-height: 30px;
+    width: 80%;
+    font-size: 17px;
+}
+.loginDetailsDiv form input::placeholder {
+    font-weight: lighter;
+    font-size: 17px;
+}
+.loginDetailsDiv form input:focus{
+    outline: none;
+}
+
+.loginDetailsDiv form .reactIcons {
+    margin: 13px;
+    color: rgb(150,51,255);
+    border: 2px solid rgb(150,51,255);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.loginDetailsDiv form label,
+.loginDetailsDiv form button{
+        border-radius: 25px;
+        margin: 5px 12px;
+        line-height: 32px;
+        width: 80%;
+        box-shadow: 5px 5px 8px rgb(223,231,252),
+                -5px -5px 8px rgb(223,231,252);
+        border: none;
+        height: 8vh;
+        transition: border-bottom 0.5 ease-in-out;
+    }
+
+    .loginDetailsDiv form button {
+        font-family: 'Your Chosen Font', sans-serif;
+        background-color: rgb(150,51,255); /* Button background color */
+        color: #fff; /* Button text color */
+        padding: 10px 20px; /* Adjust padding as needed */
+        border: none; /* Remove default button border */
+        border-radius: 5px; /* Add border-radius for rounded corners */
+        cursor: pointer; /* Change cursor on hover */
+        /* Add other styling as needed */
+        width: 60%;
+        height: 8vh;
+        border-radius: 20px;
+      }
+      
+      /* Change button styles on hover */
+      .loginDetailsDiv form button:hover {
+        background-color: #06111d; /* Adjust hover background color */
+        /* Add other hover styling as needed */
+      }
+
+    .loginDetailsDiv form select {
+        background-color: white;
+    }
+
+     #gender #id
+      {
+        font-size: 15px;
+    }
+    
+  
+    .loginDetailsDiv form label:hover,
+    .loginDetailsDiv form select:hover,
+    .loginDetailsDiv form button:hover {
+        border-bottom: 2px solid rgba(150, 51, 255, 0.8); 
+    }
+
+    .loginDetailsDiv form .termsAndConditions {
+        font-size: 13px;
+        margin: 0px;
+    }
+
+     /********************************** Desktops and Laptops *****************************/
+
+    @media screen and (min-width: 1024px) {
+        .loginMainWrapper1 .leftDiv .element {
+            margin-top: -57px;
+            margin-left: 18px;
+            font-size: 38px;
+        }
+        .loginMainWrapper1 .leftDiv .element1 {
+            font-size: 26px;
+            margin-left: 23px;
+        }
+        .loginDetailsDiv form label, .loginDetailsDiv form button {
+            width: 100%;
+        }
+        .loginDetailsDiv form {
+            margin-top: 20px;
+        }
+    
+    }
+
+
+
+/********************************** Tablets and iPads *****************************/
+
+@media screen and (min-width: 769px) and (max-width:1023px) {
+    
+}
+
+/********************************* Phones ****************************************/
+
+@media screen and (max-width: 768px) {
+    .loginMainWrapper1 .leftDiv  .element {
+        margin-top: -100px;
+        margin-left: 11px;
+        font-size: 28px;
+    }
+    .loginMainWrapper1 .leftDiv .element1 {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+    .loginMainWrapper1 .leftDiv  {
+        width: 26%;
+    }
+    .loginDetailsDiv {
+        width: 63%;
+    }
+    .loginDetailsDiv form {
+        margin-top: 12px;
+    }
+    .loginDetailsDiv form label, .loginDetailsDiv form button {
+        width: 100%;
+    }
+    .loginDetailsDiv form input, .loginDetailsDiv form select {
+        width: 76%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 468px) {
+    .loginMainWrapper {
+        position: static;
+        height: auto;
+        width: 100%;
+        float: none;
+    }
+
+    .loginMainWrapper1 {
+        position: static;
+        min-height: 100vh; /* Set a minimum height */
+        flex-direction: column;
+    }
+
+    .loginMainWrapper1 .leftDiv .leftDiv {
+        width: 100%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .loginDetailsDiv {
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .loginDetailsDiv form {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .loginMainWrapper1 .leftDiv  .element {
+        margin-top: 100px;
+        margin-left: 11px;
+        font-size: 36px;
+        margin-bottom: 0px;
+    }
+
+    .loginMainWrapper1 .leftDiv .element1 {
+        font-size: 30px;
+        margin-left: 10px;
+    }
+
+    .loginDetailsDiv form label,
+    .loginDetailsDiv form button {
+        width: 94%;
+    }
+
+    .loginDetailsDiv form input,
+    .loginDetailsDiv form select {
+        width: 76%;
+    }
+    button {
+        width: 94%;
+        font-size: 20px;
+    }
+    .loginMainWrapper1 .leftDiv {
+        margin-top: 147px;
+        width: 100%;
+        border-top-left-radius: 184px;
+        border-bottom-right-radius: 2px;
+        border-bottom-left-radius: 0px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .loginDetailsDiv form input::placeholder {
+        font-size: 15px;
+        font-weight: lighter;
+    }
+    .loginDetailsDiv form .termsAndConditions {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .loginMainWrapper1 .leftDiv  {
+        margin-top: 111px;
+        width: 100%;
+        border-top-left-radius: 155px;
+        border-bottom-right-radius: 2px;
+        border-bottom-left-radius: 0px;
+    }
+    .loginMainWrapper1 .leftDiv  .element {
+        margin-top: 18px;
+        margin-left: 102px;
+        font-size: 36px;
+        margin-bottom: 0px;
+    }
+}
